@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreyThick"
+                android:fillViewport="true"
+
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f0c9c9"
+                        android:padding="15sp"
+                        android:text="Akun anda belum verif !!"
+                        android:textColor="@color/colorText"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5sp"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_farm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_box_gray"
+                        android:orientation="horizontal"
+                        android:padding="10sp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/keenan" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_farms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/white_ripple"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_farm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2sp"
+                                android:gravity="center_vertical"
+                                android:paddingTop="3sp"
+                                android:paddingBottom="3sp"
+                                android:singleLine="true"
+                                android:text="Keenan Bird Farm"
+                                android:textColor="@color/colorTextHeader"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_member_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2sp"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="Kategori"
+                                android:paddingBottom="2sp"
+                                android:textColor="@color/colorText"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:id="@+id/tv_follower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2sp"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="Pengikut 2000"
+                                android:textColor="@color/colorText"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="right"
+                            android:src="@drawable/ic_arrow_right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:background="@drawable/border_box_gray"
+                        android:orientation="vertical"
+                        android:padding="8sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="7sp"
+                            android:paddingTop="7sp"
+                            android:paddingRight="7sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Statistik"
+                                android:textColor="@color/colorTextHeader"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="right">
+
+                                <TextView
+                                android:id="@+id/tv_see_more_statistic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:text="@string/see_more"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_statistic_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="7sp"
+                                />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_main_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:background="@drawable/border_box_gray"
+                        android:orientation="vertical"
+                        android:paddingTop="15sp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_main_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8sp"
+                        android:background="@drawable/border_box_gray"
+                        android:orientation="vertical"
+                        android:padding="8sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="7sp"
+                            android:paddingTop="7sp"
+                            android:paddingRight="7sp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Edukasi"
+                                android:textColor="@color/colorTextHeader"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="right">
+
+                                <TextView
+                                    android:id="@+id/tv_see_more_edukasi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="?attr/selectableItemBackground"
+                                    android:clickable="true"
+
+                                    android:text="@string/see_more"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_education_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7sp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+            <include layout="@layout/progress_layout"
+                android:visibility="visible"/>
+
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

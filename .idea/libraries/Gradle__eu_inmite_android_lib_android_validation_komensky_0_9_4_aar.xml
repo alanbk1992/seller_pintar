@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: eu.inmite.android.lib:android-validation-komensky:0.9.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b54a7fb7ba941098132f666ddf85874e/transformed/jetified-android-validation-komensky-0.9.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b54a7fb7ba941098132f666ddf85874e/transformed/jetified-android-validation-komensky-0.9.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.inmite.android.lib/android-validation-komensky/0.9.4/d9dba1b0994a9c224e1ad89dc580b82d50242887/android-validation-komensky-0.9.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.inmite.android.lib/android-validation-komensky/0.9.4/72d803c4eba77b5db4e532458c08ad022dd2b558/android-validation-komensky-0.9.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,119 @@
+plugins {
+   id 'com.android.application'
+ id 'org.jetbrains.kotlin.android'
+}
+
+//apply plugin: 'com.android.application'
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "project.kimora.sellerpintar"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true // Add this line
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    ['src/main/res',
+                     'src/main/res/activities', 'src/main/res/fragments',
+                     'src/main/res/adapters'
+                    ]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation "androidx.multidex:multidex:2.0.1"
+   // implementation 'androidx.core:core-ktx:1.7.0'
+   // implementation "androidx.core:core-ktx:+"
+   implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.core:core:1.9.0'
+    implementation 'com.google.firebase:firebase-firestore:24.5.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+
+    // Also declare the dependency for the Google Play services library and specify its version
+
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //noinspection GradleCompatible
+implementation 'com.android.support:design:26.1.0'
+
+    implementation 'eu.inmite.android.lib:android-validation-komensky:0.9.4@aar'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    //implementation 'com.google.android.material:material:1.3.0-alpha03'
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-v4:19.0.+"
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    //implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-vision:12.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'id.zelory:compressor:3.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+   // implementation 'org.sufficientlysecure:html-textview:4.0'
+   // implementation 'com.github.YuanWenHai:html-textview:1.6'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+
+}
+
+
+

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Seller Pintar</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+        <string name="preference_file_key">aneksaternakcenter-2023</string>
+        <string name="personal_record__file_key">aneksaternakcenter-2023</string>
+
+        <string name="facebook_app_id">204456010246671</string>
+        <string name="fb_login_protocol_scheme">fb204456010246671</string>
+
+        <string name="title_home">Beranda</string>
+        <string name="title_history">Riwayat</string>
+    <string name="title_orders">Pesanan</string>
+    <string name="title_live">Live</string>
+    <string name="title_chat">Chat</string>
+        <string name="title_profile">Akun</string>
+        <string name="title_slogan">Let\'s get your help</string>
+        <string name="btn_login">Login</string>
+        <string name="btn_register">DAFTAR</string>
+        <string name="form_phone">Nomor Handphone</string>
+        <string name="form_password">Password</string>
+        <string name="form_firstname">Nama Depan</string>
+        <string name="form_lastname">Nama Akhir</string>
+        <string name="form_email">Email</string>
+        <string name="form_password_confirm">Konfirmasi Password</string>
+        <string name="menu_doctor">DOCTOR</string>
+        <string name="menu_nurse">NURSE</string>
+        <string name="menu_ambulance">AMBULANCE</string>
+        <string name="menu_lab">LABS</string>
+        <string name="menu_farmacy">FARMACY</string>
+        <string name="menu_radiology">RADIOLOGY</string>
+        <string name="ok">OK</string>
+        <string name="oops">Kesalahan</string>
+        <string name="error_connection">Koneksi internet bermasalah! \n Tap untuk refresh</string>
+        <string name="birth_date">Tanggal Lahir</string>
+        <string name="field_cannot_empty">Field tidak boleh kosong</string>
+        <string name="wrong_email_format">Format email salah</string>
+        <string name="password_not_valid">Minimal 6 karakter terdiri dari huruf dan angka</string>
+        <string name="phone_not_valid">Nomor handphone tidak valid</string>
+        <string name="sending_registration_data">Mengirim data registrasi...</string>
+        <string name="please_validate_data">Mohon memvalidasi semua data</string>
+        <string name="resend_code">Mengirim ulang kode...</string>
+        <string name="validating_code">Validasi kode...</string>
+        <string name="alert_failed_registration">Apakah anda yakin untuk membatalkan registrasi? Data registrasi kamu mengkin akan hilang</string>
+        <string name="yes">Ya</string>
+        <string name="request_timeout">Request Timeout</string>
+        <string name="no">Tidak</string>
+        <string name="validating_user_data">Validasi modelUser data...</string>
+        <string name="two_step_verification">SMS Verifikasi</string>
+        <string name="two_step_verify_introduction">Akun ini dilindungi dengan kode sms verifikasi. Masukan kode untuk menyelesaikan registrasi.</string>
+        <string name="update">Update</string>
+        <string name="address">Alamat</string>
+        <string name="nik_ktp">No KTP (Opsional)</string>
+        <string name="birth_place">Tempat Lahir</string>
+        <string name="cannot_change_email">Alamat email kamu tidak dapat diubah, silahkan menghubungi customer service</string>
+        <string name="cannot_change_phone">Nomor handphone kamu tidak dapat diubah, silahkan menghubungi customer service</string>
+        <string name="cannot_change_ktp_id">Nomor KTP kamu tidak dapat diubah, silahkan menghubungi customer service</string>
+        <string name="cannot_change_str_id">Nomor STR kamu tidak dapat diubah, silahkan menghubungi admin VTAL</string>
+        <string name="updating_profile">Memperbarui profile...</string>
+        <string name="success">Berhasil</string>
+        <string name="sure_quit_app">Apakah anda yakin ingin keluar dari aplikasi ?</string>
+        <string name="need_gps_permission_in_airplane_mode">Airplane mode sedang menyala, ijin dibutuhkan untuk menggunakan layanan lokasi untuk mendapatkan data lokasi yang akurat</string>
+        <string name="alert_gps_enable">Membutuhkan ijin untuk menggunakan layanan lokasi untuk mendapatkan data lokasi yang akurat</string>
+        <string name="enable_gps">Aktifkan GPS</string>
+        <string name="price">Harga</string>
+        <string name="loading_data">Memuat data...</string>
+        <string name="network_problem">Server sedang bermasalah, silahkan coba lagi</string>
+        <string name="refresh">Refresh</string>
+        <string name="close">Keluar</string>
+        <string name="sending_data">Mengirim data...</string>
+        <string name="back">Kembali</string>
+        <string name="sure_back_from_order">Apakah anda yakin ingin membatalkan transaksi ini?</string>
+        <string name="have_no_experience">Belum ada pengalaman</string>
+        <string name="have_no_education">Belum ada pendidikan</string>
+        <string name="new_password">Password Baru</string>
+        <string name="change_password">Ubah Password</string>
+        <string name="current_password">Password Sekarang</string>
+        <string name="action">Tindakan</string>
+        <string name="new_article">Artikel Terbaru</string>
+        <string name="see_more">Lihat Semua</string>
+        <string name="weight">Berat (kg)</string>
+        <string name="height">Tinggi (cm)</string>
+        <string name="save">Save</string>
+        <string name="payment_method">Metode Pembayaran</string>
+        <string name="confirm_password_not_matching">Konfirmasi password tidak sama</string>
+        <string name="wrong_height_msg">Mohon mengisi data tinggi dengan benar</string>
+        <string name="wrong_weight_msg">Mohon mengisi data berat dengan benar</string>
+        <string name="ktp_input_not_valid">Mohon masukan NIK KTP yg benar</string>
+        <string name="personal_record_info"> Tap tanda + , Untuk menambahkan data record medis anda disini. Data akan disimpan secara aman di penyimpanan lokal anda.</string>
+        <string name="sure_delete_data">Apakah anda yakin ingin menghapus data ini?</string>
+        <string name="file_not_exist">File tidak ditemukan!</string>
+        <string name="settings_message">Setting Message</string>
+        <string name="name">Nama</string>
+        <string name="age">Umur (th)</string>
+        <string name="new_orders">Pesanan Baru</string>
+        <string name="all_category">Semua Kategori</string>
+        <string name="health_condition">Kondisi Kesehatan</string>
+        <string name="environment_condition">Kondisi Lingkungan</string>
+        <string name="special_request">Permintaan Khusus</string>
+        <string name="email_empty">Email tidak tersedia, apakah anda ingin menghubungi pihak lab langsung ?</string>
+
+        <string name="default_sign_in_button">Default Sign In Button</string>
+        <string name="custom_sign_in_button">Custom Sign In Button</string>
+        <string name="sign_in">Sign In</string>
+        <string name="sign_out">Sign Out</string>
+        <string name = "server_client_id">564212536570-vebv6srjng6ln6b37j0pebntdpsndr3d.apps.googleusercontent.com</string>
+        <string-array name="cancel_items">
+            <item>Terlalu lama menunggu driver</item>
+            <item>Telah dapat kendaraan lain</item>
+            <item>Salah memasukan lokasi</item>
+            <item>Lainnya</item>
+        </string-array>
+
+
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

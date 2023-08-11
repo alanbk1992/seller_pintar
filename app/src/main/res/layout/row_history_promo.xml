@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:id="@+id/row"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/no_image"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="12dp"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_data"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:text="01 Jan 2017"
+                android:textSize="12sp"
+                android:textColor="@color/colorDarkGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_alignParentRight="true"
+                android:text="Pending"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:text="NRZ615423"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="Name"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:text="Rp. 0"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/limiter_gray"
+        android:layout_below="@id/layout_data"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

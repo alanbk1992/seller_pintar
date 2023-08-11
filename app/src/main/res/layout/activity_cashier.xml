@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_orange_light"
+                        android:padding="8sp"
+                        android:text="Profil anda belum terisi lengkap..."
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5sp"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4sp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+
+                        android:id="@+id/navTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_box_gray"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="7dp">
+
+
+                        <RelativeLayout
+
+                            android:id="@+id/navLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/navTopRight">
+
+
+
+
+                            <LinearLayout
+                                android:id="@+id/layout_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <EditText
+                                    android:id="@+id/etSearch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="37dp"
+                                    android:background="@drawable/border_box_bottom_gray"
+                                    android:focusable="false"
+                                    android:hint="Barcode"
+                                    android:imeActionId="2"
+                                    android:imeActionLabel="Custom"
+                                    android:imeOptions="actionGo"
+                                    android:padding="7dp"
+                                    android:singleLine="true"
+                                    android:textSize="14sp"
+
+                                    />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/navTopRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <RelativeLayout
+                                android:id="@+id/layout_chat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_ripple"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:clickable="true">
+
+                                <ImageView
+                                    android:layout_width="22sp"
+                                    android:layout_height="22sp"
+                                    android:clickable="true"
+                                    android:src="@drawable/ic_scanner" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layout_cart"
+                                android:layout_toRightOf="@id/layout_chat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_ripple"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:clickable="true">
+
+                                <ImageView
+                                    android:layout_width="23sp"
+                                    android:layout_height="23sp"
+                                    android:clickable="true"
+
+
+                                    android:src="@drawable/ic_search" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radius_blue"
+                android:text="Proses"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreyThick"
+                android:fillViewport="true"
+                android:layout_below="@id/navTop"
+                android:visibility="visible">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="7sp"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_main_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:gravity="left"
+                            android:padding="8sp"
+                            android:singleLine="true"
+                            android:text="Sub Total : "
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_subtotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:padding="8sp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Rp. 10.000 "
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:gravity="left"
+                            android:padding="8sp"
+                            android:singleLine="true"
+                            android:text="Uang Bayar : "
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radius_white"
+                            android:inputType="text"
+                            android:padding="8sp"
+                            android:layout_marginRight="2sp"
+                            android:layout_marginLeft="2sp"
+                            android:singleLine="true"
+                            android:textColor="#000"
+                            android:textColorHint="@color/colorDarkGrey"
+                            android:textSize="14sp"
+                            android:gravity="right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:gravity="left"
+                            android:padding="8sp"
+                            android:singleLine="true"
+                            android:text="Kembali : "
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_change"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:padding="8sp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Rp. 20.000 "
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:gravity="left"
+                            android:padding="8sp"
+                            android:singleLine="true"
+                            android:text="Metode Pembayaran :"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/te_payment_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2sp"
+                            android:padding="8sp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Cash "
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

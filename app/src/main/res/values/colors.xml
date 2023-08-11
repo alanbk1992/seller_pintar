@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e66032</color>
+    <color name="colorPrimaryDark">#DB5628</color>
+    <color name="colorBlue">#4c89cf</color>
+    <color name="blue_transparent">#88365ca8</color>
+    <color name="colorAccent">@android:color/holo_blue_light</color>
+    <color name="colorPink">#FB8093</color>
+    <color name="colorGrey">#f0f0f0</color>
+    <color name="colorGreyThick">#f2f2f5</color>
+    <color name="colorDarkGrey">#8c8c8c</color>
+    <color name="colorGreen">#2aa621</color>
+    <color name="colorGreenThick">#88CD83</color>
+    <color name="colorRed">#d34836</color>
+    <color name="white_hint">#e5e5e5</color>
+    <color name="transculent_toolbar">#55365ca8</color>
+    <color name="limiter_gray">#dbdbdb</color>
+    <color name="colorBar">#fcfcfc</color>
+    <color name="rating">#f2b864</color>
+    <color name="colorChat">#d1dfeb</color>
+    <color name="rating_desc_bg">#e0e0e0</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="md_red_600">#E53935</color>
+    <color name="md_red_500">#F44336</color>
+    <color name="bg_icon">#FADACA</color>
+    <color name="colorText">
+        #403f3f
+    </color>
+    <color name="colorTextHeader">
+        #000
+    </color>
+
+</resources>
